@@ -1,0 +1,2 @@
+class WordEntry < ApplicationRecord
+end
