@@ -2,3 +2,7 @@
 <%= form_with model: @game do |f| %>
   <%= f.submit %>
 <% end %>
+
+<% @word_entries.each do |word_entry| %>
+  <%= word_entry.word_entry %>
+<% end %>
