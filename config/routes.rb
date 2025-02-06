@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   root :to => "games#index"
 
-  resources :games
+  resources :games do
+    collection do
+      delete "word_entries" => "word_entries#destroy_all"
+    end
+  end
 end

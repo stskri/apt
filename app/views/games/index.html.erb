@@ -6,3 +6,5 @@
 <% @word_entries.each do |word_entry| %>
   <%= word_entry.word_entry %>
 <% end %>
+
+<%= link_to "削除", word_entries_path, method: :delete, data: {confirm: "本当に削除しますか？"} %>
